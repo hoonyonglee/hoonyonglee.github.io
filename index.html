@@ -17,37 +17,30 @@ h3 {
 .profile-header {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 30px;
   margin-bottom: 40px;
 }
 
-.profile-image img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+.profile-image {
+  width: 180px;
   border-radius: 50%;
   border: 2px solid #ddd;
 }
 
 .profile-info h1 {
-  margin: 0;
-  font-size: 34px;
-  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.profile-info .title {
-  margin-top: 8px;
-  font-size: 18px;
-  color: #444;
-  font-weight: 500;
-}
-
-.profile-info .affiliation {
-  margin-top: 6px;
+.profile-info p {
   font-size: 16px;
-  color: #666;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-top: 0;
 }
+
+
+
+
+
 
 
   
@@ -102,41 +95,20 @@ list_Publication li::marker {
 <body>
   
     <!-- Profile Section -->
-    <div style="
-      display:flex;
-      align-items:center;
-      gap:30px;
-      margin-bottom:40px;
-    ">
+    <div class="profile-header">
     
-      <!-- Left: Profile Photo -->
       <img src="profile.jpg"
            alt="Hoonyong Lee"
-           width="180"
-           style="
-             border-radius:50%;
-             border:2px solid #ddd;
-           ;">
+           class="profile-image">
     
-      <!-- Right: Profile Information -->
-      <div>
+      <div class="profile-info">
     
-        <h1 style="margin-bottom:10px;">
-          Hoonyong Lee
-        </h1>
+        <h1>Hoonyong Lee</h1>
     
-        <p style="
-          font-size:16px;
-          line-height:1.6;
-          margin-top:0;
-        ">
-    
+        <p>
           Lecturer<br>
-    
           School of Project Management<br>
-    
           The University of Sydney
-    
         </p>
     
       </div>
